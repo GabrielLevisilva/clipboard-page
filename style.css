@@ -1,0 +1,253 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+/* GERAL */
+h1, h2, h3{
+    color: hsl(210, 10%, 33%);
+}
+p{
+    color: hsl(201, 11%, 66%);
+    width: 537px;
+    margin: auto;
+    padding: 10px;
+}
+button{
+    border: none;
+}
+/* HEADER */
+header{
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    padding: 35px;
+    background-image: url(./images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+header > img{
+    width: 10%;
+    padding: 30px;
+}
+/* BOTÃO */
+#btn1{
+    background-color: hsl(171, 66%, 44%);
+    border-bottom-color: hsl(171, 71%, 31%);
+    box-shadow: 0px 4px 20px 1px hsla(171, 71%, 31%, 0.274);
+}
+#btn2{
+    background-color: hsl(233, 100%, 69%);
+    border-bottom-color:  hsl(233, 47%, 45%);
+    box-shadow: 0px 4px 20px 1px hsla(233, 47%, 45%, 0.267);
+}
+button{
+    color: white;
+    padding: 10px 20px 10px 20px;
+    border-radius: 20px;
+    border-bottom-style: solid;
+    margin: 5px;
+    font-size: 17px;
+    height: 40px;
+    transition: 0.5s;
+}
+#btn1:hover{
+    cursor: pointer;
+    background-color: hsla(171, 66%, 44%, 0.445);
+    border-bottom-color: hsla(171, 66%, 44%, 0.432) ;
+}
+#btn2:hover{
+    cursor: pointer;
+    background-color:  hsla(233, 100%, 69%, 0.315);
+    border-bottom-color:  hsla(233, 100%, 69%, 0.459) ;
+}
+/* MAIN */
+main{
+    text-align: center;
+    margin-top: 20px;
+
+}
+.container{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 90px;
+    margin-bottom: 90px;
+}
+li{
+    text-align: left;
+    list-style: none;
+    width: 300px;
+    margin: 48px;
+}
+li > p{
+    width: 300px;
+    
+}
+#central-img{
+    margin-top: 90px;
+    margin-bottom: 90px;
+}
+/* SEÇÃO IDEIAS */
+#ideas{
+    display: flex;
+    justify-content: center;
+}
+.block{
+    margin: 30px;
+}
+.block > img{
+    margin: 30px;
+}
+.block > p{
+    width: 341px;
+}
+/* SEÇÃO DE LOGOS */
+#logos{
+    text-align: center;
+}
+#logos> img{
+    margin: 80px;
+}
+/* SEÇÃO FINAL */
+#final{
+    text-align: center;
+}
+#final > p{
+    padding-bottom: 50px;
+}
+/* FOOTER */
+footer{
+    background-color: hsla(202, 11%, 66%, 0.13);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 90px;
+    padding: 20px;
+}
+footer > img{
+    width: 49px;
+    padding: 20px 90px 20px 90px;
+}
+nav{
+    display: flex;
+}
+nav > div{
+    display: flex;
+    flex-direction: column;
+}
+footer > nav > div{
+    height: 92%;
+    
+    margin: 10px 25px 10px 25px;
+}
+#social-medias{
+    display: flex;
+    flex-direction: row;
+}
+#social-medias > img{
+    padding: 10px;
+    transition: 0.5s;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgba(0, 0, 0, 0.062);
+}
+/* lINKS */
+a{
+    text-decoration: none;
+    color: hsl(201, 11%, 66%);
+}
+a:hover{
+    color: hsl(171, 66%, 44%);
+}
+#social-medias > img:hover{
+    border-color: hsl(171, 66%, 44%);
+    cursor: pointer;
+    border-radius: 40%;
+}
+
+@media (max-width: 385px){
+    html{
+        background-color: rgb(255, 255, 255);
+        width: 100vw;
+    }
+    p{
+        width: 260px;
+    line-height: 25px;
+    }
+    /* HEADER */
+    header{
+        margin-bottom: 90px;
+        background-image: url(./images/bg-header-mobile.png);
+        width: 284px;
+        margin: 0px;
+    }
+    header > img{
+        width: 100px;
+    }
+    header > p{
+        width: 269px;
+    font-size: 17px;
+    }
+    header > h1{
+        font-size: 29px;
+    }
+    #btn1, #btn2{
+        width: 290px;
+    }
+    /* MAIN */
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .container > img{
+        width: 344px;
+    }
+    h2{
+        font-size: 29px;
+        width: 370px;
+    }
+    main > img{
+        width: 10px;
+        padding: 10px;
+    }
+    ul{
+        width: 375px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    ul > li{
+        text-align: center;
+        margin: 20px auto;
+    }
+    #central-img{
+        width: 355px;
+    }
+    #ideas{
+        flex-direction: column;
+    }
+    #ideas > p{
+        width: 300px;
+    }
+    .block > p{
+        width: 300px;
+    }
+    #final > h2{
+        width: 350px;
+    }
+    footer{
+        width: 356px;
+        background-color: hsla(202, 11%, 66%, 0.13);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 90px;
+        padding: 0px;
+    }
+    footer > nav{
+        flex-direction: column;
+        align-items: flex-start;
+        
+    }
+}
